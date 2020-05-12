@@ -12,7 +12,7 @@ const package = require('./package.json');
 
 const paths = {
   styles: {
-    src: 'src/index.sass',
+    src: 'src/index.scss',
     dest: 'dist/css/'
   }
 };
@@ -24,6 +24,8 @@ const hdr = `
   * @version  ${package.version}
   * @license  ${package.license}
   * Thorn is an open-source CSS framework
+  * It is based on Github's Primer CSS framework 
+  * And uses CSS.GG icons
 */
 `;
 
