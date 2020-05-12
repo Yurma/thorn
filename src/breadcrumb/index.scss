@@ -1,0 +1,29 @@
+@import "../support/index.scss";
+
+.breadcrumb {
+    display: inline-block;
+    margin-left: -0.35em;
+    white-space: nowrap;
+    list-style: none;
+  
+    &::after {
+      padding-right: $em-spacer-5;
+      padding-left: $em-spacer-5;
+      color: $border-gray;
+      content: "/";
+    }
+  
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  .breadcrumb-selected,
+  .breadcrumb[aria-current] {
+    color: $text-gray;
+  
+    &::after {
+      content: none;
+    }
+  }
+  
