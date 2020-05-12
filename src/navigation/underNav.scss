@@ -1,0 +1,78 @@
+.underNav {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: $border;
+    justify-content: space-between;
+}
+
+.underNav-body {
+    display: flex;
+}
+
+.underNav-item {
+    padding: $spacer-3 $spacer-2;
+    margin-right: $spacer-3;
+    font-size: $body-font-size;
+    line-height: $lh-default;
+    color: $text-gray;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px $border-style transparent;
+
+    &:hover,
+    &:focus {
+        color: $text-gray-dark;
+        text-decoration: none;
+        border-bottom-color: $border-gray-dark;
+        transition: 0.2s ease;
+
+        .underNav-icon {
+        color: $text-gray-light;
+        }
+    }
+
+    &.selected,
+    &[role=tab][aria-selected=true],
+    &[aria-current] {
+        font-weight: $font-weight-bold;
+        color: $text-gray-dark;
+        border-bottom-color: $orange-600;
+
+        .underNav-icon {
+        color: $text-gray-light;
+        }
+    }
+    }
+
+    .underNav--right {
+    justify-content: flex-end;
+
+    .underNav-item {
+        margin-right: 0;
+        margin-left: $spacer-3;
+    }
+
+    .underNav-actions {
+        flex: 1 1 auto;
+    }
+}
+
+.UnderlineNav-actions {
+    align-self: center;
+}
+
+.UnderlineNav--full {
+    display: block;
+}
+
+.UnderlineNav-octicon {
+    color: $gray-400;
+}
+
+.UnderlineNav-container {
+    display: flex;
+    justify-content: space-between;
+}

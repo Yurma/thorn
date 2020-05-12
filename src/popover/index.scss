@@ -1,0 +1,174 @@
+@import "../support/index.scss";
+
+.popover {
+    position: absolute;
+    z-index: 100;
+}
+
+.popover-message {
+    position: relative;
+    width: 232px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &::before,
+    &::after {
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        content: "";
+    }
+
+    &::before {
+        top: -$spacer-3;
+        margin-left: -9px;
+        border: $spacer-2 $border-style transparent;
+        border-bottom-color: $border-black-fade;
+    }
+
+    &::after {
+        top: -14px;
+        margin-left: -$spacer-2;
+        border: 7px $border-style transparent;
+        border-bottom-color: $bg-white;
+    }
+}
+
+.popover-message--bottom,
+.popover-message--bottom-right,
+.popover-message--bottom-left {
+    &::before,
+    &::after {
+        top: auto;
+        border-bottom-color: transparent;
+    }
+
+    &::before {
+        bottom: -$spacer-3;
+        border-top-color: $border-black-fade;
+    }
+
+    &::after {
+        bottom: -14px;
+        border-top-color: $bg-white;
+    }
+}
+
+.popover-message--top-right,
+.popover-message--bottom-right {
+    right: -9px;
+    margin-right: 0;
+
+    &::before,
+    &::after {
+        left: auto;
+        margin-left: 0;
+    }
+
+    &::before {
+        right: 20px;
+    }
+
+    &::after {
+        right: 21px;
+    }
+}
+
+.popover-message--top-left,
+.popover-message--bottom-left {
+    left: -9px;
+    margin-left: 0;
+
+    &::before,
+    &::after {
+        left: $spacer-4;
+        margin-left: 0;
+    }
+
+    &::after {
+        left: $spacer-4 + 1;
+    }
+}
+
+.popover-message--right,
+.popover-message--right-top,
+.popover-message--right-bottom,
+.popover-message--left,
+.popover-message--left-top,
+.popover-message--left-bottom {
+    &::before,
+    &::after {
+        top: 50%;
+        left: auto;
+        margin-left: 0;
+        border-bottom-color: transparent;
+    }
+
+    &::before {
+        margin-top: -($spacer-2 + 1);
+    }
+
+    &::after {
+        margin-top: -$spacer-2;
+    }
+}
+
+.popover-message--right,
+.popover-message--right-top,
+.popover-message--right-bottom {
+    &::before {
+        right: -$spacer-3;
+        border-left-color: $border-black-fade;
+    }
+
+    &::after {
+        right: -14px;
+        border-left-color: $bg-white;
+    }
+}
+
+.popover-message--left,
+.popover-message--left-top,
+.popover-message--left-bottom {
+    &::before {
+        left: -$spacer-3;
+        border-right-color: $border-black-fade;
+    }
+
+    &::after {
+        left: -14px;
+        border-right-color: $bg-white;
+    }
+}
+
+.popover-message--right-top,
+.popover-message--left-top {
+    &::before,
+    &::after {
+        top: $spacer-4;
+    }
+}
+
+.popover-message--right-bottom,
+.popover-message--left-bottom {
+    &::before,
+    &::after {
+        top: auto;
+    }
+
+    &::before {
+        bottom: $spacer-3;
+    }
+
+    &::after {
+        bottom: $spacer-3 + 1;
+    }
+    }
+
+    .popover-message--large {
+
+    @include breakpoint(sm) {
+        min-width: 320px;
+    }
+}
+  

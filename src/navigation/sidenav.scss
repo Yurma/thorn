@@ -1,0 +1,90 @@
+.sideNav {
+    background-color: $bg-gray-light;
+}
+
+.sideNav-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: $spacer-3;
+    color: $text-gray;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    border-top: $border;
+
+    &:first-child {
+        border-top: 0;
+    }
+
+    &:last-child {
+        box-shadow: 0 $border-width 0 $border-color;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 3px;
+        pointer-events: none;
+        content: "";
+    }
+}
+
+.sideNav-item:hover,
+.sideNav-item:focus {
+    color: $text-gray-dark;
+    text-decoration: none;
+    background-color: $bg-gray;
+    outline: none;
+
+    &::before {
+        background-color: $gray-300;
+    }
+}
+
+.sideNav-item:active {
+    background-color: $bg-white;
+}
+
+.sideNav-item[aria-current="page"],
+.sideNav-item[aria-selected="true"] {
+    font-weight: $font-weight-semibold;
+    color: $text-gray-dark;
+    background-color: $bg-white;
+
+    &::before {
+        background-color: $orange-600;
+    }
+}
+
+.sideNav-icon {
+    width: 16px;
+    color: $text-gray-light;
+}
+
+.sideNav-subItem {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: $spacer-1 0;
+    color: $text-blue;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+}
+
+.sideNav-subItem:hover,
+.sideNav-subItem:focus {
+    color: $text-gray-dark;
+    text-decoration: none;
+    outline: none;
+}
+
+.sideNav-subItem[aria-current="page"],
+.sideNav-subItem[aria-selected="true"] {
+    font-weight: $font-weight-semibold;
+    color: $text-gray-dark;
+}

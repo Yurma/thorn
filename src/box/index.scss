@@ -5,255 +5,254 @@
     border: $border-width $border-style $border-gray-dark;
     border-radius: $border-radius;
   }
-  .--condensed {
-    line-height: $lh-condensed;
-  
-    .-header {
-      padding: $spacer-2 $spacer-3;
-    }
-  
-    .-body {
-      padding: $spacer-2 $spacer-3;
-    }
-  
-    .-footer {
-      padding: $spacer-2 $spacer-3;
-    }
-  
-    .-btn-octicon {
-      &.btn-octicon {
-        padding: $spacer-2 $spacer-3;
-        margin: (-$spacer-2) (-$spacer-3);
-        line-height: $lh-condensed;
-      }
-    }
-  
-    .-row {
-      padding: $spacer-2 $spacer-3;
-    }
-  
+.box--condensed {
+  line-height: $lh-condensed;
+
+  .box-header {
+    padding: $spacer-2 $spacer-3;
   }
-  
-  .--spacious {
-    .-header {
-      padding: $spacer-4;
+
+  .box-body {
+    padding: $spacer-2 $spacer-3;
+  }
+
+  .box-footer {
+    padding: $spacer-2 $spacer-3;
+  }
+
+  .box-btn-icon {
+    &.btn-icon {
+      padding: $spacer-2 $spacer-3;
+      margin: (-$spacer-2) (-$spacer-3);
       line-height: $lh-condensed;
     }
-  
-    .-title {
-      font-size: $h3-size;
-    }
-  
-    .-body {
+  }
+
+  .box-row {
+    padding: $spacer-2 $spacer-3;
+  }
+
+}
+
+.box--spacious {
+  .box-header {
+    padding: $spacer-4;
+    line-height: $lh-condensed;
+  }
+
+  .box-title {
+    font-size: $h3-size;
+  }
+
+  .box-body {
+    padding: $spacer-4;
+  }
+
+  .box-footer {
+    padding: $spacer-4;
+  }
+
+  .box-btn-icon {
+    &.btn-icon {
       padding: $spacer-4;
+      margin: (-$spacer-4) (-$spacer-4);
     }
+  }
+
+  .box-row {
+    padding: $spacer-4;
+  }
+
+}
+
+.box-header {
+  padding: $spacer-3;
+  margin: (-$border-width) (-$border-width) 0;
+  background-color: $bg-gray;
+  border-color: $border-gray-dark;
+  border-style: $border-style;
+  border-width: $border-width;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.box-title {
+  font-size: $body-font-size;
+  font-weight: $font-weight-bold;
+}
+
+.box-body {
+  padding: $spacer-3;
+  border-bottom: $border-width $border-style $border-gray;
+
   
-    .-footer {
-      padding: $spacer-4;
+  &:last-of-type {
+    margin-bottom: -$border-width;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+}
+
+.box-row {
+  padding: $spacer-3;
+  margin-top: -1px;
+  list-style-type: none; 
+  border-top: $border-width $border-style $border-gray;
+
+  &:first-of-type {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  &.box-row--unread,
+  &.unread {
+    box-shadow: 2px 0 0 $blue inset;
+  }
+
+  &.navigation-focus {
+    .box-row--drag-button {
+      color: $text-blue;
+      cursor: grab;
+      opacity: 100;
     }
-  
-    .-btn-octicon {
-      &.btn-octicon {
-        padding: $spacer-4;
-        margin: (-$spacer-4) (-$spacer-4);
+
+    &.is-dragging .box-row--drag-button {
+      cursor: grabbing;
+    }
+
+    &.sortable-chosen {
+      background-color: $bg-gray-light;
+    }
+
+    &.sortable-ghost {
+      background-color: $bg-gray;
+
+      .box-row--drag-hide {
+        opacity: 0;
       }
     }
-  
-    .-row {
-      padding: $spacer-4;
-    }
-  
+
   }
-  
-  .-header {
-    padding: $spacer-3;
-    margin: (-$border-width) (-$border-width) 0;
+}
+
+.box-row--focus-gray {
+  &.navigation-focus {
     background-color: $bg-gray;
-    border-color: $border-gray-dark;
-    border-style: $border-style;
-    border-width: $border-width;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
   }
-  
-  .-title {
-    font-size: $body-font-size;
-    font-weight: $font-weight-bold;
+}
+
+.box-row--focus-blue {
+  &.navigation-focus {
+    background-color: $bg-blue-light;
   }
-  
-  .-body {
-    padding: $spacer-3;
-    border-bottom: $border-width $border-style $border-gray;
-  
-    
-    &:last-of-type {
-      margin-bottom: -$border-width;
-      border-bottom-right-radius: 2px;
-      border-bottom-left-radius: 2px;
-    }
+}
+
+.box-row--hover-gray {
+  &:hover {
+    background-color: $bg-gray;
   }
-  
-  // cnt rows
-  .-row {
-    padding: $spacer-3;
-    margin-top: -1px;
-    list-style-type: none; 
-    border-top: $border-width $border-style $border-gray;
-  
-    &:first-of-type {
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-    }
-  
-    &:last-of-type {
-      border-bottom-right-radius: 2px;
-      border-bottom-left-radius: 2px;
-    }
-  
-    &.-row--unread,
-    &.unread {
-     box-shadow: 2px 0 0 $blue inset;
-    }
-  
-    &.navigation-focus {
-      .-row--drag-button {
-        color: $text-blue;
-        cursor: grab;
-        opacity: 100;
-      }
-  
-      &.is-dragging .-row--drag-button {
-        cursor: grabbing;
-      }
-  
-      &.sortable-chosen {
-        background-color: $bg-gray-light;
-      }
-  
-      &.sortable-ghost {
-        background-color: $bg-gray;
-  
-        .-row--drag-hide {
-          opacity: 0;
-        }
-      }
-  
-    }
+}
+
+.box-row--hover-blue {
+  &:hover {
+    background-color: $bg-blue-light;
   }
-  
-  .-row--focus-gray {
-    &.navigation-focus {
-      background-color: $bg-gray;
-    }
-  }
-  
-  .-row--focus-blue {
-    &.navigation-focus {
-      background-color: $bg-blue-light;
-    }
-  }
-  
-  .-row--hover-gray {
+}
+
+.box-row-link {
+  @include breakpoint(md) {
+
+    color: $text-gray-dark;
+    text-decoration: none;
+
     &:hover {
-      background-color: $bg-gray;
-    }
-  }
-  
-  .-row--hover-blue {
-    &:hover {
-      background-color: $bg-blue-light;
-    }
-  }
-  
-  .-row-link {
-    @include breakpoint(md) {
-  
-      color: $text-gray-dark;
+      color: $text-blue;
       text-decoration: none;
-  
-      &:hover {
-        color: $text-blue;
-        text-decoration: none;
-      }
-  
     }
+
   }
-  
-  .-row--drag-button {
-    opacity: 0;
-  }
-  
-  .-footer {
-    padding: $spacer-3;
-    margin-top: -1px; 
-    border-top: $border-width $border-style $border-gray;
-  }
-  
-  .--scrollable {
-    max-height: 324px;
-    overflow: scroll;
-  }
-  
-  .--blue {
-    border-color: $border-blue-light;
-  
-    .-header {
-      background-color: $bg-blue-light;
-      border-color: $border-blue-light;
-    }
-  
-    .-body {
-      border-color: $border-blue-light;
-    }
-  
-    .-row {
-      border-color: $border-blue-light;
-    }
-  
-    .-footer {
-      border-color: $border-blue-light;
-    }
-  }
-  
-  .--danger {
-    border-color: $border-red;
-  
-    .-row {
-      &:first-of-type {
-        border-color: $border-red;
-      }
-    }
-  
-    .-body {
-      &:last-of-type {
-        border-color: $border-red;
-      }
-    }
-  }
-  
-  .-header--blue {
+}
+
+.box-row--drag-button {
+  opacity: 0;
+}
+
+.box-footer {
+  padding: $spacer-3;
+  margin-top: -1px; 
+  border-top: $border-width $border-style $border-gray;
+}
+
+.box--scrollable {
+  max-height: 324px;
+  overflow: scroll;
+}
+
+.box--blue {
+  border-color: $border-blue-light;
+
+  .box-header {
     background-color: $bg-blue-light;
     border-color: $border-blue-light;
   }
-  
-  .-row--yellow {
-    background-color: $yellow-100;
+
+  .box-body {
+    border-color: $border-blue-light;
   }
-  
-  .-row--blue {
-    background-color: $bg-blue-light;
+
+  .box-row {
+    border-color: $border-blue-light;
   }
-  
-  .-row--gray {
-    background-color: $bg-gray;
+
+  .box-footer {
+    border-color: $border-blue-light;
   }
-  
-  .-btn-octicon {
-  
-    &.btn-octicon {
-      padding: $spacer-3 $spacer-3;
-      margin: (-$spacer-3) (-$spacer-3);
-      line-height: $lh-default;
+}
+
+.box--danger {
+  border-color: $border-red;
+
+  .box-row {
+    &:first-of-type {
+      border-color: $border-red;
     }
   }
+
+  .box-body {
+    &:last-of-type {
+      border-color: $border-red;
+    }
+  }
+}
+
+.box-header--blue {
+  background-color: $bg-blue-light;
+  border-color: $border-blue-light;
+}
+
+.box-row--yellow {
+  background-color: $yellow-100;
+}
+
+.box-row--blue {
+  background-color: $bg-blue-light;
+}
+
+.box-row--gray {
+  background-color: $bg-gray;
+}
+
+.box-btn-icon {
+
+  &.btn-icon {
+    padding: $spacer-3 $spacer-3;
+    margin: (-$spacer-3) (-$spacer-3);
+    line-height: $lh-default;
+  }
+}
   
