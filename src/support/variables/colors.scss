@@ -1,0 +1,328 @@
+$black: #1c1d1f !default;
+
+$white: #fff !default;
+$darkwhite: rgb(231, 231, 231) !default;
+
+// Grays
+$gray-000:      #ececec !default;
+$gray-100:      #e2e2e2 !default;
+$gray-200:      #cfcaca !default;
+$gray-300:      #b6b1b1 !default;
+$gray-400:      #a1a6ac !default;
+$gray-500:      #7f8286 !default;
+$gray-600:      #6c6e70 !default;
+$gray-700:      #5d5f61 !default;
+$gray-800:      #434446 !default;
+$gray-900:      #2f3131 !default;
+
+$gray:          $gray-500 !default;
+$gray-light:    $gray-300 !default;
+$gray-dark:     $gray-800 !default;  
+
+$grays: (
+    0: $gray-000,
+    1: $gray-100,
+    2: $gray-200,
+    3: $gray-300,
+    4: $gray-400,
+    5: $gray-500,
+    6: $gray-600,
+    7: $gray-700,
+    8: $gray-800,
+    9: $gray-900
+)   !default;
+
+// Red
+$red-000:       #ffd5d5 !default;
+$red-100:       #ffbfbf !default;
+$red-200:       #ff8a8a !default;
+$red-300:       #ff5858 !default;
+$red-400:       #ec4e32 !default;
+$red-500:       #ec1818 !default;
+$red-600:       #d41f1f !default;
+$red-700:       #b30a0a !default;
+$red-800:       #880707 !default;
+$red-900:       #680707 !default;
+
+$red:           $red-500 !default;
+
+$reds: (
+    0: $red-000,
+    1: $red-100,
+    2: $red-200,
+    3: $red-300,
+    4: $red-400,
+    5: $red-500,
+    6: $red-600,
+    7: $red-700,
+    8: $red-800,
+    9: $red-900
+)   !default;
+
+// Green
+$green-000:     #d5ffdf !default;
+$green-100:     #95eba9 !default;
+$green-200:     #63ee84 !default;
+$green-300:     #3aec63 !default;
+$green-400:     #2cf85c !default;
+$green-500:     #16c725 !default;
+$green-600:     #0caa19 !default;
+$green-700:     #12901c !default;
+$green-800:     #0c6b14 !default;
+$green-900:     #094e0f !default;
+
+$green:         $green-500 !default;
+
+$greens: (
+    0: $green-000,
+    1: $green-100,
+    2: $green-200,
+    3: $green-300,
+    4: $green-400,
+    5: $green-500,
+    6: $green-600,
+    7: $green-700,
+    8: $green-800,
+    9: $green-900
+)   !default;
+
+// Blue
+$blue-000:      #d5e2ff !default;
+$blue-100:      #afc7fa !default;
+$blue-200:      #668de0 !default;
+$blue-300:      #5581df !default;
+$blue-400:      #427af3 !default;
+$blue-500:      #296cff !default;
+$blue-600:      #0c52eb !default;
+$blue-700:      #1347b9 !default;
+$blue-800:      #0c3692 !default;
+$blue-900:      #082562 !default;
+
+$blue:          $blue-500 !default;
+
+$blues: (
+    0: $blue-000,
+    1: $blue-100,
+    2: $blue-200,
+    3: $blue-300,
+    4: $blue-400,
+    5: $blue-500,
+    6: $blue-600,
+    7: $blue-700,
+    8: $blue-800,
+    9: $blue-900
+)   !default;
+
+// Yellow
+$yellow-000:    #fffbdd !default;
+$yellow-100:    #fdf7c7 !default;
+$yellow-200:    #f3e89f !default;
+$yellow-300:    #ffec8d !default;
+$yellow-400:    #ffdc4f !default;
+$yellow-500:    #ffd036 !default;
+$yellow-600:    #e6b208 !default;
+$yellow-700:    #ca9c05 !default;
+$yellow-800:    #ac860a !default;
+$yellow-900:    #7c6006 !default; 
+
+$yellow:        $yellow-500 !default;
+
+$yellows: (
+    0: $yellow-000,
+    1: $yellow-100,
+    2: $yellow-200,
+    3: $yellow-300,
+    4: $yellow-400,
+    5: $yellow-500,
+    6: $yellow-600,
+    7: $yellow-700,
+    8: $yellow-800,
+    9: $yellow-900
+)   !default;
+
+// Orange
+$orange-000:    #fae8d8 !default;
+$orange-100:    #fcdec4 !default;
+$orange-200:    #f8c69d !default;
+$orange-300:    #f8a971 !default;
+$orange-400:    #fb8f42 !default;
+$orange-500:    #f6731b !default;
+$orange-600:    #d85e0d !default;
+$orange-700:    #bb4f07 !default;
+$orange-800:    #aa4705 !default;
+$orange-900:    #b84f09 !default;
+
+$orange:        $orange-500 !default;
+
+$oranges: (
+    0: $orange-000,
+    1: $orange-100,
+    2: $orange-200,
+    3: $orange-300,
+    4: $orange-400,
+    5: $orange-500,
+    6: $orange-600,
+    7: $orange-700,
+    8: $orange-800,
+    9: $orange-900
+)   !default;
+
+// Purple
+$purple-000:    #f5f0ff !default;
+$purple-100:    #e6dcfd !default;
+$purple-200:    #d1bcf9 !default;
+$purple-300:    #b392f0 !default;
+$purple-400:    #8a63d2 !default;
+$purple-500:    #6f42c1 !default;
+$purple-600:    #5a32a3 !default;
+$purple-700:    #4c2889 !default;
+$purple-800:    #3a1d6e !default;
+$purple-900:    #29134e !default;
+
+$purple:        $purple-500 !default;
+
+$purples: (
+    0: $purple-000,
+    1: $purple-100,
+    2: $purple-200,
+    3: $purple-300,
+    4: $purple-400,
+    5: $purple-500,
+    6: $purple-600,
+    7: $purple-700,
+    8: $purple-800,
+    9: $purple-900
+)   !default;
+
+// Pink
+$pink-000:      #ffeef8 !default;
+$pink-100:      #fedbf0 !default;
+$pink-200:      #f9b3dd !default;
+$pink-300:      #f692ce !default;
+$pink-400:      #ec6cb9 !default;
+$pink-500:      #ea4aaa !default;
+$pink-600:      #d03592 !default;
+$pink-700:      #b93a86 !default;
+$pink-800:      #99306f !default;
+$pink-900:      #6d224f !default;
+
+$pink:          $pink-500 !default;
+
+$pinks: (
+    0: $pink-000,
+    1: $pink-100,
+    2: $pink-200,
+    3: $pink-300,
+    4: $pink-400,
+    5: $pink-500,
+    6: $pink-600,
+    7: $pink-700,
+    8: $pink-800,
+    9: $pink-900
+)   !default;
+
+// Fades
+$black-fade-05:      rgba($black, 0.05) !default;
+$black-fade-10:      rgba($black, 0.1) !default;
+$black-fade-15:      rgba($black, 0.15) !default;
+$black-fade-30:      rgba($black, 0.3) !default;
+$black-fade-50:      rgba($black, 0.5) !default;
+$black-fade-70:      rgba($black, 0.7) !default;
+$black-fade-85:      rgba($black, 0.85) !default;
+
+$white-fade-05:      rgba($white, 0.05) !default;
+$white-fade-10:      rgba($white, 0.1) !default;
+$white-fade-15:      rgba($white, 0.15) !default;
+$white-fade-30:      rgba($white, 0.3) !default;
+$white-fade-50:      rgba($white, 0.5) !default;
+$white-fade-70:      rgba($white, 0.7) !default;
+$white-fade-85:      rgba($white, 0.85) !default;
+
+$hue-maps: (
+    "gray":     $grays,
+    "red":      $reds,
+    "green":    $greens,
+    "blue":     $blues,
+    "yellow":   $yellows,
+    "orange":   $oranges,
+    "purple":   $purples,
+    "pink":     $pinks
+)   !default;
+
+// Border colors
+$border-default:        $gray-500 !default;
+$border-white:          $white !default;
+$border-black-fade:     $black-fade-15 !default;
+$border-white-fade:     $white-fade-15 !default;
+$border-gray-dark:      $gray-300 !default;
+$border-gray-darker:    $gray-700 !default;
+$border-gray-light:     $gray-100 !default;
+$border-gray:           gray-200 !default;
+$border-red:            $red !default;
+$border-red-light:      $red-200 !default;
+$border-green:          $green !default;
+$border-green-light:    $green-200 !default;
+$border-blue:           $blue !default;
+$border-blue-light:     $blue-200 !default;
+$border-yellow:         $yellow !default;
+$border-yellow-light:   $yellow-200 !default;
+$border-orange:         $orange !default;
+$border-orange-light:   $orange-200 !default;
+$border-purple:         $purple !default;
+$border-purple-light:   $purple-200 !default;
+$border-pink:           $pink !default;
+$border-pink-light:     $pink-200 !default;
+
+$border-color-button:   $border-black-fade !default;
+
+// Background colors
+$bg-white:              $white !default;
+$bg-darkwhite:          $darkwhite !default;
+$bg-black:              $black !default;
+$bg-black-fade:         $black-fade-50 !default;
+$bg-gray-dark:          $gray-300 !default;
+$bg-gray-darker:        $gray-700 !default;
+$bg-gray-light:         $gray-100 !default;
+$bg-gray:               gray-200 !default;
+$bg-red:                $red !default;
+$bg-red-light:          $red-200 !default;
+$bg-green:              $green !default;
+$bg-green-light:        $green-200 !default;
+$bg-blue:               $blue !default;
+$bg-blue-light:         $blue-200 !default;
+$bg-yellow:             $yellow !default;
+$bg-yellow-light:       $yellow-200 !default;
+$bg-orange:             $orange !default;
+$bg-orange-light:       $orange-200 !default;
+$bg-purple:             $purple !default;
+$bg-purple-light:       $purple-200 !default;
+$bg-pink:               $pink !default;
+$bg-pink-light:         $pink-200 !default;
+
+// diffstat background
+$bg-diffstat-added:     darken($green-400, 5%) !default;
+$bg-diffstat-deleted:   $red-600 !default;
+$bg-diffstat-neutral:   $gray-300 !default;
+
+// Text colors
+$text-white:            $white !default;
+$text-darkwhite:        $darkwhite !default;
+$text-black:            $black !default;
+$text-gray-dark:        $gray-300 !default;
+$text-gray-darker:      $gray-700 !default;
+$text-gray-light:       $gray-100 !default;
+$text-gray:             gray-200 !default;
+$text-red:              $red !default;
+$text-red-light:        $red-200 !default;
+$text-green:            $green !default;
+$text-green-light:      $green-200 !default;
+$text-blue:             $blue !default;
+$text-blue-light:       $blue-200 !default;
+$text-yellow:           $yellow !default;
+$text-yellow-light:     $yellow-200 !default;
+$text-orange:           $orange !default;
+$text-orange-light:     $orange-200 !default;
+$text-purple:           $purple !default;
+$text-purple-light:     $purple-200 !default;
+$text-pink:             $pink !default;
+$text-pink-light:       $pink-200 !default;
