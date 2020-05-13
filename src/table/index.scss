@@ -1,0 +1,14 @@
+.table {
+    display: table;
+}
+
+.table-item {
+    display: table-cell;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.table-item--primary {
+    width: 99%;
+}
