@@ -52,12 +52,21 @@ $em-spacer-6: 0.75em !default;      // 3/4
 // widths
 
 // container widths
+
+$container-default: 840px !default;
+$container-sm: 540px !default;
+$container-md: 720px !default;
+$container-lg: 960px !default;
+$container-xl: 1140px !default;
+$container-xxl: 1320px !default;
+
 $container-width: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1320px
+    sm: $container-sm,
+    md: $container-md,
+    default: $container-default,
+    lg: $container-lg,
+    xl: $container-xl,
+    xxl: $container-xxl
 )   !default;
 
 // form breakpoints
