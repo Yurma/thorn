@@ -1,44 +1,46 @@
-# Thorn-css
 
-
-
-
-# Thorn-css
+# Thorn CSS
 *Current version: 0.1.0*
-========
+
+
 
 Thorn is an open-source CSS framework
 
 It is based on Github's Primer CSS framework and uses CSS.GG icons.
 
-Thorn-css is still in developing stages so it is not recommended for usage as changes are cirtain
-
+Thorn CSS is still in developing stages so it is not recommended for usage as changes are cirtain
 
 Features
 --------
 
-- Be awesome
+At the current version, available features are:
+
+- Core (*Variables, Colors, Element defaults*) 
+
 
 Installation
 ------------
 
-Install $project by running:
+Install Thorn CSS with npm:
 
-    install project
+    npm i thorn-css
+
+
+
+Or include it in HTML Head with 
+
+```html
+<link href="https://unpkg.com/thorn-css/dist/css/index.css" rel="stylesheet" />
+```
+
 
 Contribute
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+- Issue Tracker: https://github.com/Yurma/thorn/issues
+- Source Code: https://github.com/Yurma/thorn
 
 License
 -------
 
-The project is licensed under the BSD license.
+The project is licensed under the MIT license.
