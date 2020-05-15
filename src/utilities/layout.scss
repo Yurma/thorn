@@ -1,0 +1,55 @@
+@each $breakpoint, $variant in $responsive-variants {
+    @include breakpoint($breakpoint) {
+        @each $position in $responsive-positions {
+            .position#{$variant}-#{$position} {
+                position: $position !important;
+            }
+        }
+    }
+}
+
+.top-0    { top: 0 !important; }
+.right-0  { right: 0 !important; }
+.bottom-0 { bottom: 0 !important; }
+.left-0   { left: 0 !important; }
+
+.v-align-middle      { vertical-align: middle !important; }
+.v-align-top         { vertical-align: top !important; }
+.v-align-bottom      { vertical-align: bottom !important; }
+.v-align-text-top    { vertical-align: text-top !important; }
+.v-align-text-bottom { vertical-align: text-bottom !important; }
+.v-align-baseline    { vertical-align: baseline !important; }
+
+@each $overflow in (visible, hidden, auto, scroll) {
+    .overflow-#{$overflow} { overflow: $overflow !important; }
+    .overflow-x-#{$overflow} { overflow-x: $overflow !important; }
+    .overflow-y-#{$overflow} { overflow-y: $overflow !important; }
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+@each $breakpoint, $variant in $responsive-variants {
+    @include breakpoint($breakpoint) {
+        .float#{$variant}-left  { float: left !important; }
+        .float#{$variant}-right  { float: right !important; }
+        .float#{$variant}-none { float: none !important; }
+    }
+}
+
+.width-fit   { max-width: 100% !important; }
+.width-full  { width: 100% !important; }
+.height-fit  { max-height: 100% !important; }
+.height-full { height: 100% !important; }
+
+.min-width-0 { min-width: 0 !important; }
+
+@each $breakpoint, $variant in $responsive-variants {
+    @include breakpoint($breakpoint) {
+        .width#{$variant}-auto { width: auto !important; }
+        .direction#{$variant}-rtl { direction: rtl !important; }
+        .direction#{$variant}-ltr { direction: ltr !important; }
+    }
+}
+  

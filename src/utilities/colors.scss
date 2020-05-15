@@ -1,0 +1,78 @@
+@each $hue, $shades in $hue-maps {
+    @each $index, $color in $shades {
+        .color-#{$hue}-#{$index} { color: $color !important; }
+        .bg-#{$hue}-#{$index} { background-color: $color !important; }
+    }
+}
+
+.link-gray {
+    color: $text-gray !important;
+
+    &:hover {
+        color: $text-blue !important;
+    }
+}
+.link-gray-dark {
+    color: $text-gray-dark !important;
+
+    &:hover {
+        color: $text-blue !important;
+    }
+}
+.link-hover-blue {
+    &:hover {
+        color: $text-blue !important;
+    }
+}
+.muted-link {
+    color: $text-gray !important;
+    &:hover {
+        color: $text-blue !important;
+        text-decoration: none;
+    }
+}
+
+.bg-white           { background-color: $bg-white !important; }
+.bg-darkwhite       { background-color: $bg-darkwhite !important; }
+.bg-black           { background-color: $bg-black !important; }
+.bg-black-fade      { background-color: $bg-black-fade !important; }
+.bg-gray-dark       { background-color: $bg-gray-dark !important; }
+.bg-gray-darker     { background-color: $bg-gray-darker !important; }
+.bg-gray-light      { background-color: $bg-gray-light !important; }
+.bg-gray            { background-color: $bg-gray !important; }
+.bg-red             { background-color: $bg-red !important; }
+.bg-red-light       { background-color: $bg-red-light !important; }
+.bg-green           { background-color: $bg-green !important; }
+.bg-green-light     { background-color: $bg-green-light !important; }
+.bg-blue            { background-color: $bg-blue !important; }
+.bg-blue-light      { background-color: $bg-blue-light !important; }
+.bg-yellow          { background-color: $bg-yellow !important; }
+.bg-yellow-light    { background-color: $bg-yellow-light !important; }
+.bg-orange          { background-color: $bg-orange !important; }
+.bg-orange-light    { background-color: $bg-orange-light !important; }
+.bg-purple          { background-color: $bg-purple !important; }
+.bg-purple-light    { background-color: $bg-purple-light !important; }
+.bg-pink            { background-color: $bg-pink !important; }
+.bg-pink-light      { background-color: $bg-pink-light !important; }
+
+.text-white         { color: $text-white !important; }
+.text-darkwhite     { color: $text-darkwhite !important; }
+.text-black         { color: $text-black !important; }
+.text-gray-dark     { color: $text-gray-dark !important; }
+.text-gray-darker   { color: $text-gray-darker !important; }
+.text-gray-light    { color: $text-gray-light !important; }
+.text-gray          { color: $text-gray !important; }
+.text-red           { color: $text-red !important; }
+.text-red-light     { color: $text-red-light !important; }
+.text-green         { color: $text-green !important; }
+.text-green-light   { color: $text-green-light !important; }
+.text-blue          { color: $text-blue !important; }
+.text-blue-light    { color: $text-blue-light !important; }
+.text-yellow        { color: $text-yellow !important; }
+.text-yellow-light  { color: $text-yellow-light !important; }
+.text-orange        { color: $text-orange !important; }
+.text-orange-light  { color: $text-orange-light !important; }
+.text-purple        { color: $text-purple !important; }
+.text-purple-light  { color: $text-purple-light !important; }
+.text-pink          { color: $text-pink !important; }
+.text-pink-light    { color: $text-pink-light !important; }
