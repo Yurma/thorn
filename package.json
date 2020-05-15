@@ -1,6 +1,6 @@
 {
-  "name": "thorncss",
-  "version": "1.0.0",
+  "name": "thorn-css",
+  "version": "0.1.0",
   "description": "CSS Framework",
   "main": "dist/css/index.css",
   "dependencies": {
