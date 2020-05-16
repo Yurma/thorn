@@ -1,4 +1,5 @@
 $black: #1c1d1f !default;
+$black-light: #202020 !default;
 
 $white: #fff !default;
 $darkwhite: rgb(231, 231, 231) !default;
@@ -281,7 +282,7 @@ $bg-darkwhite:          $darkwhite !default;
 $bg-black:              $black !default;
 $bg-black-fade:         $black-fade-50 !default;
 $bg-gray-dark:          $gray-300 !default;
-$bg-gray-darker:        $gray-700 !default;
+$bg-gray-darker:        $gray-800 !default;
 $bg-gray-light:         $gray-100 !default;
 $bg-gray:               gray-200 !default;
 $bg-red:                $red !default;
@@ -308,6 +309,7 @@ $bg-diffstat-neutral:   $gray-300 !default;
 $text-white:            $white !default;
 $text-darkwhite:        $darkwhite !default;
 $text-black:            $black !default;
+$text-black-lighter:    $black-light !default;
 $text-gray-dark:        $gray-300 !default;
 $text-gray-darker:      $gray-700 !default;
 $text-gray-light:       $gray-100 !default;

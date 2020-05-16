@@ -13,6 +13,10 @@ $spacer-5: $spacer * 4 !default;            // 16px
 $spacer-6: $spacer-4 * 2 !default;          // 24px
 $spacer-7: $spacer-5 * 2 !default;          // 32px
 $spacer-8: $spacer-4 * 3 !default;          // 36px
+$spacer-9: $spacer-6 * 2 !default;          // 42px
+$spacer-10: $spacer * 9 !default;          // 56px
+$spacer-11: $spacer-7 * 2 !default;          // 64px
+$spacer-12: $spacer-8 * 2 !default;          // 72px
 
 // Lists of spacers, one is for loops
 
@@ -25,7 +29,11 @@ $spacers: (
     $spacer-5,
     $spacer-6,
     $spacer-7,
-    $spacer-8
+    $spacer-8,
+    $spacer-9,
+    $spacer-10,
+    $spacer-11,
+    $spacer-12
 )   !default;
 
 $spacer-map: (
@@ -37,7 +45,11 @@ $spacer-map: (
     5: $spacer-5,
     6: $spacer-6,
     7: $spacer-7,
-    8: $spacer-8
+    8: $spacer-8,
+    9: $spacer-9,
+    10: $spacer-10,
+    11: $spacer-11,
+    12: $spacer-12
 )   !default;
 
 // em spacers
@@ -59,6 +71,13 @@ $container-md: 720px !default;
 $container-lg: 960px !default;
 $container-xl: 1140px !default;
 $container-xxl: 1320px !default;
+
+$width-default: 840px !default;
+$width-sm: 540px !default;
+$width-md: 720px !default;
+$width-lg: 960px !default;
+$width-xl: 1140px !default;
+$width-xxl: 1320px !default;
 
 $container-width: (
     sm: $container-sm,
