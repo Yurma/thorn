@@ -8,6 +8,21 @@
     background-color: $bg-gray-darker;
     align-items: center;
     flex-wrap: nowrap;
+
+    &.--light {
+        background-color: $bg-darkwhite;
+        color: $black;
+
+        .header-link{
+            color: $black;
+            &:hover,
+            &:focus {
+                color: $text-gray-darker;
+            }
+
+            
+        }
+    }
 }
 
 .header-item {
@@ -29,7 +44,7 @@
 
     &:hover,
     &:focus {
-        color: $darkwhite;
+        color: $text-gray-light;
         text-decoration: none;
     }
 }
