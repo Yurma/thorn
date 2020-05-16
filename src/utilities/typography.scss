@@ -1,3 +1,19 @@
+.h00 {
+    font-size: $h00-size-mobile !important;
+
+    @include breakpoint(md) { 
+        font-size: $h00-size !important; 
+    }
+}
+
+.h0 {
+    font-size: $h0-size-mobile !important;
+
+    @include breakpoint(md) { 
+        font-size: $h0-size !important; 
+    }
+}
+
 .h1 {
     font-size: $h1-size-mobile !important;
 
@@ -34,6 +50,8 @@
     font-size: $h6-size !important; 
 }
 
+.h00,
+.h0,
 .h1,
 .h2,
 .h3,
@@ -41,6 +59,23 @@
 .h5,
 .h6 { 
     font-weight: $font-weight-bold !important; 
+}
+
+
+.f00 {
+    font-size: $h00-size-mobile !important;
+
+    @include breakpoint(md) { 
+        font-size: $h00-size !important;
+    }
+}
+
+.f0 {
+    font-size: $h0-size-mobile !important;
+
+    @include breakpoint(md) { 
+        font-size: $h0-size !important;
+    }
 }
 
 .f1 {
@@ -127,8 +162,14 @@
     }
 }
 
-.text-small { 
-    font-size: $h6-size !important; 
+@each $scale, $size in $text-size-map {
+    .text-size-#{$scale}{
+        font-size: map-get($text-size-mobile-map, $scale) !important;
+
+        @include breakpoint(md) {
+            font-size: $size !important;
+        }
+    }
 }
 
 .lead {
