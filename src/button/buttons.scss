@@ -1,0 +1,62 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: $border-width $border-style transparent;
+    font-size: map-get($text-size-map, 6);
+    font-weight: $font-weight-semibold;
+    border-radius: 0.25em;
+    appearance: none;
+    line-height: 20px;
+
+    &:hover {
+        text-decoration: none;
+        background-repeat: repeat-x;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:disabled,
+    &.disabled,
+    &[aria-disabled=true] {
+        cursor: default;
+        background-position: 0 0;
+    }
+
+    &:active,
+    &.selected,
+    &[aria-selected=true] {
+        background-image: none;
+    }
+}
+
+
+@each $color, $value in $button-map {
+    .btn-#{$color} {
+        background-color: nth($value, 1);
+        color: nth($value, 2);
+        border: $border-width $border-style nth($value, 1);
+        &:hover {
+            background-color: darken(nth($value, 1), 10%);
+            border: $border-width $border-style darken(nth($value, 1), 15%);
+            color: lighten(nth($value, 2), 5%);
+        }
+        
+        &-transparent {
+            background: transparent;
+            color: $black;
+            border: none;
+            &:hover {
+                background-color: nth($value, 1);
+                color: nth($value, 2);
+                border: $border-width $border-style nth($value, 1);
+            }
+        }
+    }
+}

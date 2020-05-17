@@ -2,7 +2,7 @@ $black: #1c1d1f !default;
 $black-light: #202020 !default;
 
 $white: #fff !default;
-$darkwhite: rgb(231, 231, 231) !default;
+$darkwhite: darken($white, 5%) !default;
 
 // Grays
 $gray-000:      #ececec !default;
@@ -90,8 +90,8 @@ $greens: (
 // Blue
 $blue-000:      #d5e2ff !default;
 $blue-100:      #afc7fa !default;
-$blue-200:      #668de0 !default;
-$blue-300:      #5581df !default;
+$blue-200:      #89a4e0 !default;
+$blue-300:      #678ee2 !default;
 $blue-400:      #427af3 !default;
 $blue-500:      #296cff !default;
 $blue-600:      #0c52eb !default;
@@ -222,6 +222,47 @@ $pinks: (
     9: $pink-900
 )   !default;
 
+// buttons
+
+$button-map: (
+    "default": ($gray, $white),
+    "black": ($black, $darkwhite),
+    "white": ($white, $black),
+    "red": ($red, $darkwhite),
+    "green": ($green, $darkwhite),
+    "blue": ($blue, $darkwhite),
+    "orange": ($orange, $darkwhite),
+    "yellow": ($yellow, $black),
+    "lightred": ($red-200, $black),
+    "lightgreen": ($green-200, $black),
+    "lightblue": ($blue-200, $black),
+    "lightorange": ($orange-200, $black),
+    "lightyellow": ($yellow-200, $black)
+
+)   !default;
+
+$button-styles: (
+    "default": ($gray-100: $black),
+    "black": ($black, $gray-100),
+    "white": ($white, $gray-700),
+    "red": ($red, $red-700),
+    "lightred": ($red-200, $red),
+    "green": $green,
+    "lightgreen": $green-200,
+    "blue": $blue,
+    "lightblue": $blue-200,
+    "orange": $orange,
+    "lightorange": $orange-200,
+    "yellow": $yellow,
+    "lightyellow": $yellow-200,
+    "purple": $purple,
+    "lightpurple": $purple-200,
+    "pink": $pink,
+    "lightpink": $pink-200,
+    "darkgray": $gray-400,
+    "darkergray": $gray-700,
+)   !default;
+
 // Fades
 $black-fade-05:      rgba($black, 0.05) !default;
 $black-fade-10:      rgba($black, 0.1) !default;
@@ -284,7 +325,7 @@ $bg-black-fade:         $black-fade-50 !default;
 $bg-gray-dark:          $gray-300 !default;
 $bg-gray-darker:        $gray-800 !default;
 $bg-gray-light:         $gray-100 !default;
-$bg-gray:               gray-200 !default;
+$bg-gray:               $gray-200 !default;
 $bg-red:                $red !default;
 $bg-red-light:          $red-200 !default;
 $bg-green:              $green !default;
