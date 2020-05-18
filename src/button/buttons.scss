@@ -34,29 +34,41 @@
     &[aria-selected=true] {
         background-image: none;
     }
-}
 
+    &.btn-squared {
+        border-radius: 0 !important;
+    }
 
-@each $color, $value in $button-map {
-    .btn-#{$color} {
-        background-color: nth($value, 1);
-        color: nth($value, 2);
-        border: $border-width $border-style nth($value, 1);
-        &:hover {
-            background-color: darken(nth($value, 1), 10%);
-            border: $border-width $border-style darken(nth($value, 1), 15%);
-            color: lighten(nth($value, 2), 5%);
-        }
-        
-        &-transparent {
-            background: transparent;
-            color: $black;
-            border: none;
+    &.btn-rounder {
+        border-radius: 2em;
+    }
+
+    @each $color, $value in $button-map {
+        &.btn-#{$color} {
+            background-color: nth($value, 1);
+            color: nth($value, 2);
             &:hover {
-                background-color: nth($value, 1);
-                color: nth($value, 2);
-                border: $border-width $border-style nth($value, 1);
+                background-color: darken(nth($value, 1), 10%);
+                color: lighten(nth($value, 2), 5%);
             }
+            
+            &-transparent {
+                background: transparent;
+                color: $black;
+                &:hover {
+                    background-color: nth($value, 1);
+                    color: nth($value, 2);
+                }
+            }
+        }
+    }
+
+    &.btn-link {
+        color: $text-blue;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
