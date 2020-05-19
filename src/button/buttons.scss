@@ -72,3 +72,77 @@
         }
     }
 }
+
+.btn-icon {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    line-height: $lh-condensed-ultra;
+    color: $text-gray;
+    vertical-align: middle;
+    background: transparent;
+    border: $border-width $border-style transparent;
+
+    &:hover {
+        color: $text-blue;
+    }
+
+    &:disabled,
+    &[aria-disabled=true] {
+        color: $gray-400;
+        cursor: default;
+
+        &:hover {
+            color: $gray-400;
+        }
+    }
+
+    &-round {
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        background: $gray-100;
+        border-radius: 100%;
+        overflow: none;
+        text-align: center;
+        padding: 5px;
+        border: $border-width $border-style transparent;
+
+        span,
+        div {
+            display:inline-block;
+            vertical-align:middle;
+        }
+
+        @each $color, $value in $button-map {
+            &.btn-#{$color} {
+                background-color: nth($value, 1);
+                color: nth($value, 2);
+                &:hover {
+                    @if ($color == "black") {
+                        background-color: lighten(nth($value, 1), 20%);
+                        color: nth($value, 2);
+                    } @else if ($color == "white") {
+                        background-color: darken(nth($value, 1), 20%);
+                        color: nth($value, 2);
+                    } @else if (str-index($color, "light")) {
+                        background-color: darken(nth($value, 1), 20%);
+                        color: lighten(nth($value, 2), 5%);
+                    } @else {  
+                        background-color: darken(nth($value, 1), 10%);
+                        color: invert(nth($value, 2), 90%);
+                    }
+                }
+                
+                &-transparent {
+                    background: transparent;
+                    color: $black;
+                    &:hover {
+                        background-color: nth($value, 1);
+                        color: nth($value, 2);
+                    }
+                }
+            }
+        }
+    }
+}

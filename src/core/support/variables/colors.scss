@@ -241,28 +241,6 @@ $button-map: (
 
 )   !default;
 
-$button-styles: (
-    "default": ($gray-100: $black),
-    "black": ($black, $gray-100),
-    "white": ($white, $gray-700),
-    "red": ($red, $red-700),
-    "lightred": ($red-200, $red),
-    "green": $green,
-    "lightgreen": $green-200,
-    "blue": $blue,
-    "lightblue": $blue-200,
-    "orange": $orange,
-    "lightorange": $orange-200,
-    "yellow": $yellow,
-    "lightyellow": $yellow-200,
-    "purple": $purple,
-    "lightpurple": $purple-200,
-    "pink": $pink,
-    "lightpink": $pink-200,
-    "darkgray": $gray-400,
-    "darkergray": $gray-700,
-)   !default;
-
 // Fades
 $black-fade-05:      rgba($black, 0.05) !default;
 $black-fade-10:      rgba($black, 0.1) !default;
