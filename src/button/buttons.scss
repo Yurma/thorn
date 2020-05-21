@@ -121,7 +121,7 @@
         text-decoration: none;
         outline: none;
         cursor: pointer;
-        background: $gray-100;
+        background: transparent;
         border-radius: 100%;
         overflow: none;
         text-align: center;
@@ -131,7 +131,7 @@
         span,
         div {
             display:inline-block;
-            vertical-align:middle;
+            vertical-align:top;
         }
 
         @each $color, $value in $button-map {

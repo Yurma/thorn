@@ -1,6 +1,6 @@
 
 # Thorn CSS
-*Current version: 0.1.0*
+*Current version: 0.2.0*
 
 
 
@@ -8,7 +8,7 @@ Thorn is an open-source CSS framework
 
 It is based on Github's Primer CSS framework and uses CSS.GG icons.
 
-Thorn CSS is still in developing stages so it is not recommended for usage as changes are cirtain
+Thorn CSS is still in developing stages so it is not recommended for usage as changes are certain
 
 Features
 --------
@@ -16,6 +16,9 @@ Features
 At the current version, available features are:
 
 - Core (*Variables, Colors, Element defaults*) 
+- Utilities (*Padding, margin, flexbox, borders, ...*)
+- Layout (*Container, grid, header*)
+- Button (*Buttons, button styles, button groups, ...*)
 
 
 Installation
