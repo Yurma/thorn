@@ -108,3 +108,89 @@
 .border-white-fade-70   { border-color: $white-fade-70 !important; }
 .border-white-fade-85   { border-color: $white-fade-85 !important; }
 
+.border-hover {
+    &:hover{
+        border-color: $border-gray;
+    }
+    &-green:hover{
+        border-color: $border-green !important;
+    }
+    &-green-light:hover{
+        border-color: $border-green-light !important;
+    }
+    &-red:hover{
+        border-color: $border-red !important;
+    }
+    &-red-light:hover{
+        border-color: $border-red-light !important;
+    }
+    &-blue:hover{
+        border-color: $border-blue !important;
+    }
+    &-blue-light:hover{
+        border-color: $border-blue-light !important;
+    }
+    &-purple:hover{
+        border-color: $border-purple !important;
+    }
+    &-purple-light:hover{
+        border-color: $border-purple-light !important;
+    }
+    &-pink:hover{
+        border-color: $border-pink !important;
+    }
+    &-pink-light:hover{
+        border-color: $border-pink-light !important;
+    }
+    &-orange:hover{
+        border-color: $border-orange !important;
+    }
+    &-orange-light:hover{
+        border-color: $border-orange-light !important;
+    }
+    &-yellow:hover{
+        border-color: $border-yellow !important;
+    }
+    &-yellow-light:hover{
+        border-color: $border-yellow-light !important;
+    }
+    &-gray:hover{
+        border-color: $border-gray !important;
+    }
+    &-gray-light:hover{
+        border-color: $border-gray-light !important;
+    }
+    &-gray-dark:hover{
+        border-color: $border-gray-dark !important;
+    }
+    &-gray-darker:hover{
+        border-color: $border-gray-darker !important;
+    }
+    &-black:hover{
+        border-color: $black !important;
+    }
+    &-white:hover{
+        border-color: $white !important;
+    }
+    &-black-fade:hover{
+        border-color: $border-black-fade !important;
+    }
+    &-white-fade :hover{
+        border-color: $border-white-fade  !important;
+    }
+    &-white-fade-15:hover{
+        border-color: $white-fade-15 !important;
+    }
+    &-white-fade-30:hover{
+        border-color: $white-fade-30 !important;
+    }
+    &-white-fade-50:hover{
+        border-color: $white-fade-50 !important;
+    }
+    &-white-fade-70:hover{
+        border-color: $white-fade-70 !important;
+    }
+    &-white-fade-85:hover{
+        border-color: $white-fade-85 !important;
+    }
+}

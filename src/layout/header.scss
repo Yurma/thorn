@@ -57,9 +57,10 @@
     }
     
     .header-dropdown-menu {
-        border: 1px solid $gray;
+        border: $border-width $border-style $gray;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        background-color: $bg-white;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         position: absolute;
@@ -74,7 +75,7 @@
             padding: $spacer-2 $spacer-2 $spacer-2 $spacer-4;
             width: 100%;
             overflow: hidden;
-            color: $text-white;
+            color: $gray;
             text-overflow: ellipsis;
             white-space: nowrap;
 
@@ -139,7 +140,7 @@
     .header-button {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        border: $border-width $border-style transparent;
+        border: $border-width $border-style $gray;
     }
 
     .header-dropdown-menu {

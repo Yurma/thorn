@@ -221,9 +221,9 @@
 }
 
 .dropdown-menu-dark {
-    color: $text-white;
-    background: $gray-800;
-    border-color: $border-gray-darker;
+    color: $text-white !important;
+    background: $gray-800 !important;
+    border-color: $border-gray-darker !important;
     box-shadow: $box-shadow-lg;
 
     &::before {
@@ -236,51 +236,51 @@
 
 
     .dropdown-header {
-        color: $gray-300;
+        color: $gray-300 !important;
     }
 
     .dropdown-divider {
-        border-top-color: $border-gray-darker;
+        border-top-color: $border-gray-darker !important;
     }
 
     .dropdown-item {
-        color: inherit;
+        color: inherit !important;
 
         &:focus,
         &:hover {
-            background-color: lighten($gray-800, 10%);
-            color: $white;
+            background-color: lighten($gray-800, 10%) !important;
+            color: $white !important;
         }
     }
 
 
     &.dropdown-menu-w {
         &::before {
-        border-color: transparent transparent transparent $border-gray-darker;
+        border-color: transparent transparent transparent $border-gray-darker !important;
         }
 
         &::after {
-        border-color: transparent transparent transparent $gray-800;
+        border-color: transparent transparent transparent $gray-800 !important;
         }
     }
 
     &.dropdown-menu-e {
         &::before {
-        border-color: transparent $border-gray-darker transparent transparent;
+        border-color: transparent $border-gray-darker transparent transparent !important;
         }
 
         &::after {
-        border-color: transparent $gray-800 transparent transparent;
+        border-color: transparent $gray-800 transparent transparent !important;
         }
     }
 
     &.dropdown-menu-ne {
         &::before {
-        border-color: $border-gray-darker transparent transparent transparent;
+        border-color: $border-gray-darker transparent transparent transparent !important;
         }
 
         &::after {
-        border-color: $gray-800 transparent transparent transparent;
+        border-color: $gray-800 transparent transparent transparent !important;
         }
     }
 }
