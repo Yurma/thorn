@@ -145,6 +145,9 @@
                     } @else if ($color == "white") {
                         background-color: darken(nth($value, 1), 20%);
                         color: nth($value, 2);
+                    } @else if ($color == "yellow") {
+                        background-color: darken(nth($value, 1), 10%);
+                        color: lighten(nth($value, 2), 5%);
                     } @else if (str-index($color, "light")) {
                         background-color: darken(nth($value, 1), 20%);
                         color: lighten(nth($value, 2), 5%);

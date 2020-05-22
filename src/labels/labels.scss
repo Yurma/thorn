@@ -1,0 +1,75 @@
+.label {
+    display: inline-block;
+    padding: 3px $spacer-1;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: $lh-condensed-ultra;
+    color: $text-white;
+    background-color: $bg-blue;
+    border-radius: 2px;
+    box-shadow: inset 0 -1px 0 rgba($black, 0.12);
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &-gray {
+       color: $text-gray-darker;
+       background-color: lighten($gray, 20%); 
+    }
+
+    &-dark-gray {
+        color: $text-darkwhite;
+        background-color: $gray;
+    }
+
+    &-outline {
+        margin-top: -1px;
+        margin-bottom: -1px;
+        font-weight: $font-weight-normal;
+        color: $text-gray;
+        background-color: transparent;
+        border: $border-width $border-style $border-black-fade;
+        box-shadow: none;
+    }
+}
+
+.state {
+    display: inline-block;
+    padding: $spacer-2 $spacer-3;
+    font-weight: $font-weight-bold;
+    font-size: $body-font-size;
+    line-height: 20px;
+    color: $text-white;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: $border-radius;
+    background-color: $bg-blue;
+    border-radius: 2px;
+    box-shadow: inset 0 -1px 0 rgba($black, 0.12);
+}
+
+.counter {
+    display: inline-block;
+    padding: $spacer-1 $spacer-2;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: $lh-condensed-ultra;
+    color: $text-gray;
+    background-color: rgba($black, 0.08);
+    border-radius: 15px;
+
+    &:empty {
+        visibility: hidden;
+    }
+
+    &.-dark {
+        background-color: $gray;
+        color: $text-white;
+    }
+
+    &.-light {
+        background-color: $black-fade-15;
+        color: $text-gray-dark;
+    }
+}
