@@ -2,7 +2,7 @@
 # Thorn CSS
 *Current version: 0.2.0*
 
-
+![Thorn](.\Thorn.png)
 
 Thorn is an open-source CSS framework
 
