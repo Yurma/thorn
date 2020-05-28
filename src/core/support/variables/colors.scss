@@ -226,12 +226,12 @@ $pinks: (
 
 $button-map: (
     "default": ($gray, $white),
-    "black": ($black, $darkwhite),
+    "black": ($black, $white),
     "white": ($white, $black),
-    "red": ($red, $darkwhite),
-    "green": ($green, $darkwhite),
-    "blue": ($blue, $darkwhite),
-    "orange": ($orange, $darkwhite),
+    "red": ($red, $white),
+    "green": ($green, $white),
+    "blue": ($blue, $white),
+    "orange": ($orange, $white),
     "yellow": ($yellow, $black),
     "lightred": ($red-200, $black),
     "lightgreen": ($green-200, $black),
